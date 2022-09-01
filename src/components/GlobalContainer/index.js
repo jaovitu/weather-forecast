@@ -5,7 +5,6 @@ export default function GlobalContainer({ isHomePage, children }) {
   const styles = StyleSheet.create({
     globalContainerStyle: {
       backgroundColor: isHomePage ? '#FFF' : '#477fff',
-      color: '#000',
       flex: 1,
       padding: 20,
     }
