@@ -11,7 +11,11 @@ function getFormattedDate() {
 
   return {
       weekDay,
-      day: day < 10 ? `0${day}` : `${day}`,
+
+      day: (day < 10
+        ? `0${day}`
+        : `${day}`),
+
       month
   };
 }
