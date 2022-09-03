@@ -1,5 +1,6 @@
 import { StyleSheet, View } from "react-native";
 
+import TopBar from "../components/TopBar/index";
 import GlobalContainer from '../components/GlobalContainer/index';
 import HeaderTitle from '../components/HeaderTitle/index';
 import MainWeatherBox from "../components/MainWeatherBox/index";
@@ -14,6 +15,8 @@ export default function Home() {
 
     return (
       <GlobalContainer isHomePage >
+        <TopBar />
+
         <View style={styles.header} >
           <HeaderTitle city='São Paulo' country='Brasil' isHomePage />
         </View>
