@@ -31,7 +31,7 @@ export default function MainWeatherDetailsCard({ iconName, title, value }) {
       <Feather name={iconName} size={24} color="#FFF" />
 
       <View style={styles.textArea} >
-        <Text style={styles.title} >{`${title}`.toLocaleUpperCase()}</Text>
+        <Text style={styles.title} >{`${title}`.toUpperCase()}</Text>
         <Text style={styles.value} >{value}</Text>
       </View>
     </View>

@@ -7,13 +7,14 @@ export default function MainWeatherInfo({ iconName, weather, weekDay, day, month
     mainWeatherInfoContainer: {
       alignItems: 'center',
       display: 'flex',
-      marginTop: 40,
-      marginBottom: 40
+      justifyContent: 'center',
+      marginTop: 30,
+      marginBottom: 20,
     },
 
     weatherText: {
       color: '#FFF',
-      fontSize: 20,
+      fontSize: 18,
       fontWeight: '400',
       letterSpacing: 1,
       marginTop: 8
@@ -21,15 +22,15 @@ export default function MainWeatherInfo({ iconName, weather, weekDay, day, month
 
     dateText: {
       color: 'rgba(255, 255, 255, 0.5)',
-      fontSize: 13,
+      fontSize: 12,
       marginTop: 5
     },
 
     temperatureText: {
       color: '#FFF',
-      fontSize: 72,
+      fontSize: 65,
       fontWeight: '700',
-      marginTop: 20,
+      marginTop: 10,
     }
   });
 

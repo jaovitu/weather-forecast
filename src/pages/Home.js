@@ -9,7 +9,7 @@ export default function Home() {
 
   const styles = StyleSheet.create({
     header: {
-      marginTop: 40
+      marginTop: 25,
     }
   });
 
