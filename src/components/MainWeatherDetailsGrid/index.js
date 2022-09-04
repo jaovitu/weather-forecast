@@ -36,7 +36,7 @@ export default function MainWeatherDetailsGrid() {
       alignItems: 'center',
       display: 'flex',
       justifyContent: 'center',
-      padding: 8,
+      padding: 10,
     }
   });
 

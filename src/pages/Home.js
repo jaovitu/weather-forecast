@@ -4,6 +4,7 @@ import TopBar from "../components/TopBar/index";
 import GlobalContainer from '../components/GlobalContainer/index';
 import HeaderTitle from '../components/HeaderTitle/index';
 import MainWeatherBox from "../components/MainWeatherBox/index";
+import WeatherPerHour from "../components/WeatherPerHour";
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
         </View>
 
         <MainWeatherBox />
+        <WeatherPerHour />
       </GlobalContainer>
     );
 }
