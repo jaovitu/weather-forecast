@@ -1,5 +1,6 @@
 import { StyleSheet, View } from "react-native";
 import getFormattedDate from "../../utils/getFormattedDate";
+import MainWeatherDetails from "../MainWeatherDetails";
 
 import MainWeatherInfo from "../MainWeatherInfo";
 
@@ -18,6 +19,7 @@ export default function MainWeatherBox() {
   return (
     <View style={styles.mainWeatherBoxContainer} >
       <MainWeatherInfo iconName='cloud-sun-rain' weather='Heavy Rain' weekDay={weekDay} day={day} month={month} temperature='21' />
+      <MainWeatherDetails />
     </View>
   );
 }
