@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import WeatherPerHourCard from "../WeatherPerHourCard";
 import WeatherPerHourHeader from "../WeatherPerHourHeader";
 
-export default function WeatherPerHour() {
+export default function WeatherPerHour({ navigation }) {
 
   const styles = StyleSheet.create({
     weatherPerHourContainer: {
@@ -17,7 +17,7 @@ export default function WeatherPerHour() {
 
   return (
     <View style={styles.weatherPerHourContainer} >
-      <WeatherPerHourHeader />
+      <WeatherPerHourHeader navigation={navigation} />
 
       <ScrollView style={styles.weatherPerHourScroll} horizontal={true} showsHorizontalScrollIndicator={false} >
         <WeatherPerHourCard isCurrentHour hour='12:00' temperature='24' iconName='cloud' />

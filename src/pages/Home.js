@@ -6,7 +6,7 @@ import HeaderTitle from '../components/HeaderTitle/index';
 import MainWeatherBox from "../components/MainWeatherBox/index";
 import WeatherPerHour from "../components/WeatherPerHour";
 
-export default function Home() {
+export default function Home({ navigation }) {
 
   const styles = StyleSheet.create({
     header: {
@@ -23,7 +23,7 @@ export default function Home() {
         </View>
 
         <MainWeatherBox />
-        <WeatherPerHour />
+        <WeatherPerHour navigation={navigation} />
       </GlobalContainer>
     );
 }

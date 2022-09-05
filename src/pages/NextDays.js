@@ -5,7 +5,7 @@ import GlobalContainer from "../components/GlobalContainer";
 import HeaderTitle from "../components/HeaderTitle";
 import NextDaysWeatherCard from "../components/NextDaysWeatherCard";
 
-export default function NextDays() {
+export default function NextDays({ navigation }) {
   const styles = StyleSheet.create({
     header: {
       alignItems: 'flex-start',
@@ -38,7 +38,7 @@ export default function NextDays() {
   return (
     <GlobalContainer>
       <View style={styles.header} >
-        <TouchableOpacity style={styles.headerIcon} >
+        <TouchableOpacity style={styles.headerIcon} onPress={() => navigation.navigate('Home')} >
           <MaterialIcons name="keyboard-arrow-left" size={24} color='rgba(255, 255, 255, 0.7)' />
         </TouchableOpacity>
 
