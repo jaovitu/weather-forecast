@@ -18,7 +18,7 @@ export default function MainWeatherBox() {
 
   return (
     <View style={styles.mainWeatherBoxContainer} >
-      <MainWeatherInfo iconName='cloud-sun-rain' weather='Heavy Rain' weekDay={weekDay} day={day} month={month} temperature='21' />
+      <MainWeatherInfo iconName='cloud-sun-rain' weather='Heavy Rain' weekDay={weekDay} day={day} month={month} temperature='24' />
       <MainWeatherDetails />
     </View>
   );
