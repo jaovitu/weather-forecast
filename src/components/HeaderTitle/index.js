@@ -4,14 +4,14 @@ export default function HeaderTitle({ city, country, isHomePage }) {
 
   const styles = StyleSheet.create({
     cityTextStyle: {
-      color: isHomePage ? '#5c5a5a' : '#c5c9c5',
-      fontSize: isHomePage ? 24 : 14,
+      color: isHomePage ? '#5c5a5a' : 'rgba(255, 255, 255, 0.7)',
+      fontSize: isHomePage ? 24 : 15,
       fontWeight: '700'
     },
 
     countryTextStyle: {
-      color: isHomePage ? 'grey' : 'lightgrey',
-      fontSize: isHomePage ? 18 : 12,
+      color: isHomePage ? 'grey' : 'rgba(255, 255, 255, 0.7)',
+      fontSize: isHomePage ? 18 : 15,
     }
   });
 
